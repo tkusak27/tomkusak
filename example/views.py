@@ -1,15 +1,15 @@
-# example/views.py
-from datetime import datetime
+# \simple_test_root\pages\views.py
+from django.shortcuts import render
+from . models import Page
 
-from django.http import HttpResponse
+def index(request, pagename=''):
+    context = {}
+    return render(request, 'index.html', context)
 
-def index(request):
-    now = datetime.now()
-    html = f'''
-    <html>
-        <body>
-            <h1>Christian likes poop.</h1>
-        </body>
-    </html>
-    '''
-    return HttpResponse(html)
+def about(request):
+    context = {}
+    return render(request, 'about.html', context)
+
+def fantasy(request):
+    context = {}
+    return render(request, 'fantasy.html', context)
