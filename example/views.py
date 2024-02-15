@@ -10,6 +10,6 @@ def about(request):
     context = {}
     return render(request, 'about.html', context)
 
-def fantasy(request):
+def blog(request):
     context = {}
-    return render(request, 'fantasy.html', context)
+    return render(request, 'blog.html', context)

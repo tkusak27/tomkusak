@@ -1,0 +1,64 @@
+.navbar {
+    padding: 0;
+}
+
+body {
+    background-color: #2A2A2A; 
+}
+
+.container-fluid {
+    background: #1A1A1A;
+    padding-top: 0.1%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    height: 80px;
+}
+
+.navbar-brand {
+color: #DCDCDC;
+font-family: helvetica;
+font-weight: bold;
+padding-left: 15px;
+}
+
+.navbar-brand:hover {
+transition: color 0.2s ease-in-out;
+color: white;
+}
+
+.navbar-brand:not(:hover)
+{
+transition: color 0.2s ease-in-out;
+color: #DCDCDC;
+}
+
+.nav-link {
+color: #DCDCDC;
+font-family: helvetica;
+padding-top: 12px;
+padding-right: 25px;
+}
+
+.nav-link:hover {
+color: white;
+}
+
+.container-sm {
+margin-top: 50px;
+padding-top: 25px;
+width: 70%;
+background-color: #990000;
+border-radius: 20px;
+}
+
+.container-md {
+margin-top: 50px;
+padding-top: 25px;
+width: 85%;
+background-color: #990000;
+border-radius: 20px;
+}
+
+h1 {
+font-family: helvetica;
+color: #DCDCDC;
+}
