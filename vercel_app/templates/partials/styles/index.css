@@ -1,0 +1,25 @@
+<style>
+h4 {
+font-family: helvetica;
+color: #DCDCDC;
+}
+
+p {
+    font-family: helvetica;
+    color: #DCDCDC;
+}
+
+.index-header {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.index-content {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    text-align: center;
+}
+</style>
