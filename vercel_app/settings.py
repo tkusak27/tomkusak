@@ -121,7 +121,7 @@ STATIC_ROOT = '/Users/tomkusak/Django/tomkusak/staticfiles'
 
 
 STATICFILES_DIRS = [
-    "/Users/tomkusak/Django/tomkusak/vercel_app/templates/static"
+    os.path.join(BASE_DIR, 'vercel_app', 'templates', 'static')
 ]
 
 # Default primary key field type
