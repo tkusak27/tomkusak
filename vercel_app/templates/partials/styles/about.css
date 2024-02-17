@@ -1,0 +1,41 @@
+<style>
+
+    .img-div {
+        max-width: 300px;
+        margin: 0 auto; 
+        text-align: center; 
+        padding-top: 20px;
+    }
+        
+    .cover-photo {
+        width: 100%; 
+        display: block; 
+        max-width: 100%;
+        height: auto; 
+    }
+    
+    
+    h4 {
+    font-family: helvetica;
+    color: #DCDCDC;
+    }
+    
+    p {
+        font-family: helvetica;
+        color: #DCDCDC;
+    }
+    
+    .index-header {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 45px;
+        text-align: center;
+    }
+    
+    .index-content {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 20px;
+        text-align: center;
+    }
+    </style>
