@@ -117,6 +117,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = '/Users/tomkusak/Django/tomkusak/staticfiles'
+
+
+STATICFILES_DIRS = [
+    "/Users/tomkusak/Django/tomkusak/vercel_app/templates/static"
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
