@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-import os
+import os, dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -79,11 +79,16 @@ WSGI_APPLICATION = 'vercel_app.wsgi.app'
 # environments like Vercel. You can use a database over HTTP, hosted elsewhere.
 
 DATABASES = {
-    'default' : {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3'
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'verceldb',  # Database name
+        'USER': 'default',    # Database username
+        'PASSWORD': 'LW4Kvsy8lQDc',  # Database password
+        'HOST': 'ep-plain-sky-a59rf8tt-pooler.us-east-2.aws.neon.tech',  # Database host
+        'PORT': '5432',  # Database port
     }
 }
+
 
 
 # Password validation
@@ -122,10 +127,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+#STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'vercel_app', 'templates', 'static')
+    os.path.join(BASE_DIR, 'static')
 ]
 
 # Default primary key field type
