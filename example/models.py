@@ -1,13 +1,30 @@
 from django.db import models
 import datetime
 
-# Create your models here.
-class Page(models.Model):
-    title = models.CharField(max_length=60)
-    permalink = models.CharField(max_length=12, unique=True)
-    update_date = models.DateTimeField('Last Updated')
-    create_date = models.DateField('First Published', default = datetime.date.today)
-    bodytext = models.TextField('Page Content', blank=True)
+class Category(models.Model):
+    name = models.CharField(max_length=30)
 
-def __str__(self):
-    return self.title
+    class Meta:
+        verbose_name_plural = "categories"
+
+    def __str__(self):
+        return self.name
+
+class Post(models.Model):
+    title = models.CharField(max_length=255)
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    last_modified = models.DateTimeField(auto_now=True)
+    categories = models.ManyToManyField("Category", related_name="posts")
+
+    def __str__(self):
+        return self.title
+
+class Comment(models.Model):
+    author = models.CharField(max_length=60)
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    post = models.ForeignKey("Post", on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.author} on '{self.post}'"
