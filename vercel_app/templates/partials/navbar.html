@@ -1,3 +1,9 @@
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>Your Title</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles/navbar_style.css' %}">
+</head>
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
@@ -13,5 +19,3 @@
     </ul>          
   </div>
 </nav>
-
-<style>{% include 'partials/styles/navbar_style.css' %}</style>
