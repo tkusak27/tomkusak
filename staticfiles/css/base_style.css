@@ -1,4 +1,4 @@
 .content {
-    height: fit-content;
-    background-color: white;
+    min-height: 85vh;
+    background-color: gray;
 }
