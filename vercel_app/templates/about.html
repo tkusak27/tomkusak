@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
+{% block content %}
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about_style.css' %}">
 </head>
-{% block content %}
     <div class="index-header">
         <h4>
             about me
         </h4>
     </div>
     <div class="img-div">
-        <!--img src="{% static "graduation.jpg" %}" alt="family" class="cover-photo"-->
+        <img src="{% static "images/graduation.jpg" %}" alt="family" class="cover-photo">
     </div>
     <div class="index-content">
         <p>
