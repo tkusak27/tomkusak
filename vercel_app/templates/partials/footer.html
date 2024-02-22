@@ -1,5 +1,16 @@
+{% load static %}
+{% block footer %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer_style.css' %}">
+</head>
 <footer>
     <div class="footer-content">
-        This footer sucks
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/kusak-tom/">LinkedIn</a>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/tkusak27">GitHub</a>
+        </ul>       
     </div>
 </footer>
+{% endblock footer %}
