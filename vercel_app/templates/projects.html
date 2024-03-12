@@ -12,9 +12,11 @@
             </h4>
         </div>
         <div class="index-content">
-            <p>
-                {{ content }}
-            </p>
+            <ul class="projects-list">
+                {% for project in projects %}
+                    <li>{{ project.title }} - {{ project.description }}</li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 {% endblock content %}

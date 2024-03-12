@@ -10,3 +10,7 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
+
+class Project(models.Model):
+    title = models.CharField(max_length=60)
+    description = models.TextField('Description')

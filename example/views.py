@@ -1,6 +1,6 @@
 # \simple_test_root\pages\views.py
 from django.shortcuts import render
-from . models import Page
+from . models import Page, Project
 
 def index(request):
     pg = Page.objects.get(permalink='/')
@@ -25,11 +25,14 @@ def career(request):
 
 def projects(request):
     pg = Page.objects.get(permalink='/projects')
+    projects = Project.objects.all()
+
     context = {
         'title': pg.title,
         'content': pg.bodytext,
         'last_updated': pg.update_date,
         'page_list': Page.objects.all(),
+        'projects': projects,
     }
     return render(request, 'projects.html', context)
 
