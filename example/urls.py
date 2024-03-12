@@ -1,11 +1,11 @@
 # example/urls.py
 from django.urls import path
 
-from example.views import index, about, blog_index
+from example.views import index, projects, about
 
 
 urlpatterns = [
     path('', index),
+    path('projects/', projects, name='projects'),
     path('about/', about, name='about'),
-    path('blog/', blog_index, name='blog')
 ]

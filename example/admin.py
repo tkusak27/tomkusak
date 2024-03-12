@@ -2,17 +2,13 @@ from django.contrib import admin
 
 # Register your models here.
 from django.contrib import admin
-from example.models import Category, Comment, Post
+from .models import Page
 
-class CategoryAdmin(admin.ModelAdmin):
-    pass
 
-class PostAdmin(admin.ModelAdmin):
-    pass
+class PageAdmin(admin.ModelAdmin):
+    list_display = ('title', 'update_date')
+    ordering = ('title',)
+    search_field = ('title',)
 
-class CommentAdmin(admin.ModelAdmin):
-    pass
-
-admin.site.register(Category, CategoryAdmin)
-admin.site.register(Post, PostAdmin)
-admin.site.register(Comment, CommentAdmin)
+# Register your models here.
+admin.site.register(Page, PageAdmin)
