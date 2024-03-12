@@ -1,11 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="index-header">
-        <h4>
-            Welcome to the projects page - under construction
-        </h4>
-    </div>
-    <div class="index-content">
-        <p> </p>
-    </div>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about_style.css' %}">
+</head>
+    <body>
+        <div class="index-header">
+            <h4>
+                {{ title }}
+            </h4>
+        </div>
+        <div class="index-content">
+            <p>
+                {{ content }}
+            </p>
+        </div>
+    </body>
 {% endblock content %}
