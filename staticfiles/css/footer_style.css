@@ -5,7 +5,13 @@ footer {
     background-color: black;
 }
 
+nav {
+    font-family: helvetica;
+}
+
 .footer-content {
     padding: 20px;
     text-align: center;
+    font-family: helvetica;
+    color: #5d5d5d;
 }

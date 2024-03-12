@@ -12,6 +12,17 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
+def career(request):
+    pg = Page.objects.get(permalink='/career')
+    context = {
+        'title': pg.title,
+        'content': pg.bodytext,
+        'last_updated': pg.update_date,
+        'page_list': Page.objects.all(),
+    }
+    return render(request, 'career.html', context)
+
+
 def projects(request):
     pg = Page.objects.get(permalink='/projects')
     context = {
