@@ -1,5 +1,6 @@
 from django.db import models
 import datetime
+from django_editorjs import EditorJsField
 
 class Page(models.Model):
     title = models.CharField(max_length=60)
@@ -10,10 +11,15 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
+    
+class BlogPost(models.Model):
+    title = models.CharField(max_length=60)
+    post=models.TextField('')
 
 class Project(models.Model):
     title = models.CharField(max_length=60)
-    description = models.TextField('Description')
+    description = EditorJsField()
+
 
 class Career(models.Model):
     interests = models.TextField('Interests')
