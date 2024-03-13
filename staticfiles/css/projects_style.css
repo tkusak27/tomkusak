@@ -15,6 +15,11 @@ p {
     padding-right: 30%;
 }
 
+.projects-list {
+    color: white;
+    font-family: helvetica;
+}
+
 .index-header {
     text-align: left;
 }
