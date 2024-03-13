@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'example',
-    'django-editorjs',
-    'django-editorjs-field',
+    'django_editorjs',
 ]
 
 MIDDLEWARE = [

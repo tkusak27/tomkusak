@@ -18,8 +18,16 @@ class BlogPost(models.Model):
 
 class Project(models.Model):
     title = models.CharField(max_length=60)
-    description = EditorJsField()
-
+    description = EditorJsField(editorjs_config={
+            "tools": {
+                "Table": {
+                    "disabled": False,
+                    "inlineToolbar": True,
+                    "config": {"rows": 2, "cols": 3,},
+                }
+            }
+        }
+    )
 
 class Career(models.Model):
     interests = models.TextField('Interests')

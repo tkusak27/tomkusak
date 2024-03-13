@@ -3,4 +3,3 @@ whitenoise==6.6.0
 psycopg2-binary==2.9.9
 markdown==3.5.2
 django-editorjs==0.2.1
-django-editorjs-field==0.0.3
