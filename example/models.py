@@ -14,3 +14,8 @@ class Page(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=60)
     description = models.TextField('Description')
+
+class Career(models.Model):
+    interests = models.TextField('Interests')
+    past_experience = models.TextField('Past Experiences')
+    upcoming = models.TextField('Upcoming')
