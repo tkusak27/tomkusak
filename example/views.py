@@ -14,7 +14,7 @@ def index(request):
 
 def blog(request):
     context = {
-
+        
     }
     return render(request, 'blog.html', context)
     
