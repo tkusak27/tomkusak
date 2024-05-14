@@ -2,7 +2,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: #383a4a;
 }
 
 nav {
@@ -13,5 +13,5 @@ nav {
     padding: 20px;
     text-align: center;
     font-family: helvetica;
-    color: #5d5d5d;
+    color: #383a4a;
 }
